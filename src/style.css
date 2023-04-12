@@ -80,14 +80,14 @@ body {
   transform: scale(1.1);
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   .display {
     display: grid;
     grid-template-columns: 90%;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    'lead' 
-    'form';
+    grid-template-areas:
+      'lead'
+      'form';
     justify-content: center;
     gap: 10rem;
   }
