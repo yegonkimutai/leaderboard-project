@@ -23,6 +23,10 @@ body {
   justify-content: space-between;
 }
 
+.refresh {
+  box-shadow: 2px 3px 5px;
+}
+
 .scores {
   border: 1px solid black;
 }
@@ -31,7 +35,7 @@ body {
   padding: 10px;
 }
 
-.score-board:nth-child(odd) {
+.score-board:nth-child(even) {
   background-color: lightgray;
 }
 
@@ -55,6 +59,7 @@ body {
   margin-top: 20px;
   position: relative;
   left: 48%;
+  box-shadow: 2px 3px 5px;
 }
 
 .fotter {
@@ -65,4 +70,29 @@ body {
   height: 40px;
   margin: 0%;
   background-color: lightgrey;
+}
+
+.refresh:hover {
+  transform: scale(1.1);
+}
+
+.submit:hover {
+  transform: scale(1.1);
+}
+
+@media(max-width: 600px) {
+  .display {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'lead' 
+    'form';
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  .fotter {
+    display: none;
+  }
 }
