@@ -11,8 +11,7 @@ body {
   display: grid;
   grid-template-columns: 30% 30%;
   grid-template-rows: 1fr;
-  grid-template-areas:
-    'lead' 'form';
+  grid-template-areas: 'lead' 'form';
   justify-content: center;
   gap: 10rem;
 }
