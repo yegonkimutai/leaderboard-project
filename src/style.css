@@ -63,7 +63,7 @@ body {
 }
 
 .fotter {
-  position: absolute;
+  position: relative;
   bottom: 0.2%;
   border-top: 1px solid black;
   width: 100%;
